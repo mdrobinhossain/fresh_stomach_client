@@ -1,0 +1,48 @@
+.sidebar-parent{
+    position:fixed;
+    right:0;
+}
+.sidebar{
+    height:100vh;
+    width:280px;
+    margin-left:auto;
+    margin-right:0;
+    transition:all 1s ease-in-out;
+}
+.hide-sidebar{
+    width:280px;
+    height:100vh;
+    margin-left:auto;
+    margin-right:-250px;
+    height:100vh;
+    transition:all 1s ease-in-out;
+}
+.menu-circle{
+    width: 25px;
+    height:25px;
+    border-radius:50%;
+    border:2px solid white;
+    animation-name: blink-menu-circle;
+    
+
+}
+.menu-half-circle{
+    height:30px;
+    width:30px;
+    border-radius: 50% 0 0 50%;
+    animation-name: blink-menu-circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay:2s;
+}
+
+@keyframes blink-menu-circle{
+    0%{opacity:1}
+    20%{opacity:0.5;}
+    40%{opacity:0.25;}
+    50%{opacity:0}
+    60%{opacity:0.25}
+    80%{opacity:0.5}
+    100%{opacity:1;}
+}
